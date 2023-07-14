@@ -1,2 +1,1 @@
-# alx-low_level_programming
-starting language C 
+a readme file
