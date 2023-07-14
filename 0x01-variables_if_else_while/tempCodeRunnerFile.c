@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 /**
  * main - Entry point
  * 
@@ -8,7 +8,6 @@ int main(void)
 {
     int ones = '0';
     int tens = '0';
-
     for (tens = '0'; tens <= '9'; tens++)
     {
         for (ones = '0'; ones <= '9'; ones++){
@@ -22,9 +21,3 @@ int main(void)
                     putchar(' ');
                 }
              }
-        }
-    }
-
-    putchar('\n');
-    return (0);
-}
