@@ -1,28 +1,28 @@
 #include "main.h"
 /**
  * print_triangle - prints a triangle, followed by a new line..
- * @size: the number of times the character \ should be printed
+ * @size: the number of times the character # should be printed
  * Return: Always 0 (success)
  */
 
 void print_triangle(int size)
 {
-	int i;
-	int space;
-	int hashes;
+	int hght, base;
 
 	if (size <= 0)
 		_putchar('\n');
-	for (i = 0; i <= size; i++)
+	else
 	{
-		for (space = size - i; space >= 1; space--)
+		for (hght = 1; hght <= size; hght++)
 		{
-			_putchar(' ');
-		}
-		for (hashes = 1; hashes <= i; hashes++)
+			for (base = 1; base <= size; base++)
 		{
-			_putchar('#');
+			if ((hght + base) <= size)
+				_putchar(' ');
+			else
+				_putchar('#');
 		}
 		_putchar('\n');
+		}
 	}
 }
