@@ -4,6 +4,7 @@
 /**
  * is_prime_number - check if integer is a prime number
  * @n: integer
+ * @n2: integer
  * Return: int
  */
 int check_prime(int n, int n2);
